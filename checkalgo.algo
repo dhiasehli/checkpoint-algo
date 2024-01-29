@@ -1,0 +1,29 @@
+function check_algo(sentence) {
+    let sentenceLength = 0;
+    let wordCount = 0;
+    let vowelCount = 0;
+
+    for (let i = 0; i < sentence.length; i++) {
+        const char = sentence[i];
+
+        sentenceLength++;
+
+       
+        if (char === ' ') {
+            wordCount++;
+        }
+
+       
+        if (['a', 'e', 'i', 'o', 'u'].includes(char.toLowerCase())) {
+            vowelCount++;
+        }
+    }
+
+    wordCount++;
+
+  
+}
+
+
+const userInput = prompt("Enter a sentence ending with a point:");
+check_algo(userInput);
